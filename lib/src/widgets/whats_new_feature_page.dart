@@ -21,6 +21,8 @@ class WhatsNewFeaturePage extends StatelessWidget {
   /// accent button color
   final Color? buttonColor;
 
+  final String title;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
