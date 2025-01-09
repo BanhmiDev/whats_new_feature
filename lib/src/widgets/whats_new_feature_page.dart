@@ -6,6 +6,7 @@ class WhatsNewFeaturePage extends StatelessWidget {
   /// Whats new feature page
   const WhatsNewFeaturePage({
     Key? key,
+    required this.title,
     required this.features,
     required this.appName,
     required this.buttonColor,
@@ -52,7 +53,7 @@ class WhatsNewFeaturePage extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Text(
-            "What's new in $appName",
+            title,
             textAlign: TextAlign.center,
             style: const TextStyle(
               color: Colors.white,
