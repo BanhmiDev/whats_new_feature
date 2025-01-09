@@ -21,6 +21,7 @@ class WhatsNewFeature {
     Function()? navigatedToWhatsNewPage,
     required List<WhatsNewFeatureTile> features,
     bool showWhatsNewOnFirstInstall = false,
+    required String title,
     Color buttonColor = Colors.amber,
     Duration delay = const Duration(seconds: 1),
   }) async {
@@ -50,6 +51,7 @@ class WhatsNewFeature {
         _navigateToWhatsNewPage(
           context,
           features,
+          title,
           packageInfo.appName,
           buttonColor,
         );
@@ -60,6 +62,7 @@ class WhatsNewFeature {
   void _navigateToWhatsNewPage(
     BuildContext context,
     List<WhatsNewFeatureTile> features,
+    String title,
     String appName,
     Color? buttonColor,
   ) {
@@ -67,6 +70,7 @@ class WhatsNewFeature {
       context,
       MaterialPageRoute(
         builder: (context) => WhatsNewFeaturePage(
+          title: title,
           buttonColor: buttonColor,
           features: features,
           appName: appName,
