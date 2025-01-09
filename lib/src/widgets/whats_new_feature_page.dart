@@ -8,15 +8,11 @@ class WhatsNewFeaturePage extends StatelessWidget {
     Key? key,
     required this.title,
     required this.features,
-    required this.appName,
     required this.buttonColor,
   }) : super(key: key);
 
   /// list of whats new features
   final List<WhatsNewFeatureTile> features;
-
-  /// app name
-  final String appName;
 
   /// accent button color
   final Color? buttonColor;
