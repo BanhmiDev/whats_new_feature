@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  package_info_plus: ^1.4.2
+  package_info_plus: ^2.0.0
   shared_preferences: ^2.0.15
 
 dev_dependencies:
