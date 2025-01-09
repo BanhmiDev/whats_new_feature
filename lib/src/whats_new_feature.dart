@@ -20,8 +20,8 @@ class WhatsNewFeature {
     required bool showWhatsNew,
     Function()? navigatedToWhatsNewPage,
     required List<WhatsNewFeatureTile> features,
-    bool showWhatsNewOnFirstInstall = false,
     required String title,
+    bool showWhatsNewOnFirstInstall = false,
     Color buttonColor = Colors.amber,
     Duration delay = const Duration(seconds: 1),
   }) async {
