@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:whats_new_feature/src/widgets/whats_new_feature_page.dart';
 import 'package:whats_new_feature/src/widgets/whats_new_feature_tile.dart';
 
