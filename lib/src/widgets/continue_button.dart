@@ -9,7 +9,7 @@ class ContinueButton extends StatelessWidget {
     required this.onTap,
     this.accentColor,
     this.buttonTextColor,
-    this.buttonText
+    required this.buttonText
   }) : super(key: key);
 
   ///
