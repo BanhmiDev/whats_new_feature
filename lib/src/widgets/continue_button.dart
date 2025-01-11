@@ -8,6 +8,8 @@ class ContinueButton extends StatelessWidget {
     Key? key,
     required this.onTap,
     this.accentColor,
+    this.buttonTextColor,
+    this.buttonText
   }) : super(key: key);
 
   ///
@@ -15,6 +17,9 @@ class ContinueButton extends StatelessWidget {
 
   ///
   final Color? accentColor;
+
+  final Color? buttonTextColor;
+  final String buttonText;
 
   @override
   Widget build(BuildContext context) {
@@ -29,10 +34,10 @@ class ContinueButton extends StatelessWidget {
           color: accentColor ?? Theme.of(context).colorScheme.secondary,
           onTap: onTap,
           child: const Text(
-            'CONTINUE',
+            buttonText ?? 'CONTINUE',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.black,
+              color: buttonTextColor ?? Colors.black,
               fontWeight: FontWeight.bold,
             ),
           ),
