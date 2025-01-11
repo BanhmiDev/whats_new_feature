@@ -17,6 +17,8 @@ class WhatsNewFeature {
     required List<WhatsNewFeatureTile> features,
     required String title,
     Color buttonColor = Colors.amber,
+    Color buttonTextColor = Colors.black,
+    String buttonText;
     Duration delay = const Duration(seconds: 1),
   }) async {
     // do not navigate to whats new page if [showWhatsNew] false
@@ -29,6 +31,8 @@ class WhatsNewFeature {
         features,
         title,
         buttonColor,
+        buttonTextColor,
+        buttonText
       );
     });
   }
@@ -38,6 +42,8 @@ class WhatsNewFeature {
     List<WhatsNewFeatureTile> features,
     String title,
     Color? buttonColor,
+    Color? buttonTextColor,
+    String buttonText
   ) {
     Navigator.push<void>(
       context,
@@ -46,6 +52,8 @@ class WhatsNewFeature {
           title: title,
           buttonColor: buttonColor,
           features: features
+          buttonTextColor: buttonTextColor,
+          buttonText: buttonText
         ),
       ),
     );
