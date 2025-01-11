@@ -9,6 +9,8 @@ class WhatsNewFeaturePage extends StatelessWidget {
     required this.title,
     required this.features,
     required this.buttonColor,
+    required this.buttonTextColor,
+    required this.buttonText
   }) : super(key: key);
 
   /// list of whats new features
@@ -18,6 +20,10 @@ class WhatsNewFeaturePage extends StatelessWidget {
   final Color? buttonColor;
 
   final String title;
+
+  final Color? buttonTextColor;
+
+  final String buttonText;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +37,8 @@ class WhatsNewFeaturePage extends StatelessWidget {
             right: 0,
             bottom: 0,
             child: ContinueButton(
+              buttonText: buttonText,
+              buttonTextColor: buttonTextColor,
               accentColor: buttonColor,
               onTap: () {
                 Navigator.of(context).pop();
