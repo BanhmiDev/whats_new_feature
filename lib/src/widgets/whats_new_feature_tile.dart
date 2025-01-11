@@ -39,7 +39,7 @@ class WhatsNewFeatureTile extends ListTile {
               ),
             ),
           ),
-          horizontalTitleGap: 0,
+          horizontalTitleGap: 12,
           minVerticalPadding: 8,
           contentPadding: const EdgeInsets.symmetric(horizontal: 20),
         );
