@@ -33,8 +33,8 @@ class ContinueButton extends StatelessWidget {
         child: StadiumButton(
           color: accentColor ?? Theme.of(context).colorScheme.secondary,
           onTap: onTap,
-          child: const Text(
-            buttonText ?? 'CONTINUE',
+          child: Text(
+            buttonText,
             textAlign: TextAlign.center,
             style: TextStyle(
               color: buttonTextColor ?? Colors.black,
