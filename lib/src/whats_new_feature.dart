@@ -51,7 +51,7 @@ class WhatsNewFeature {
         builder: (context) => WhatsNewFeaturePage(
           title: title,
           buttonColor: buttonColor,
-          features: features
+          features: features,
           buttonTextColor: buttonTextColor,
           buttonText: buttonText
         ),
