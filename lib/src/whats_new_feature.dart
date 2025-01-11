@@ -18,7 +18,7 @@ class WhatsNewFeature {
     required String title,
     Color buttonColor = Colors.amber,
     Color buttonTextColor = Colors.black,
-    String buttonText;
+    String? buttonText = null;
     Duration delay = const Duration(seconds: 1),
   }) async {
     // do not navigate to whats new page if [showWhatsNew] false
