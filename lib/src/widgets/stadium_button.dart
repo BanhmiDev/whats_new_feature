@@ -31,7 +31,7 @@ class StadiumButton extends StatelessWidget {
         margin: EdgeInsets.only(left: leftPadding, right: rightPadding),
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(4),
         ),
         child: Center(
           child: isLoading
