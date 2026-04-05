@@ -37,7 +37,8 @@ class ContinueButton extends StatelessWidget {
             buttonText,
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: buttonTextColor ?? Colors.black
+              color: buttonTextColor ?? Colors.black,
+              fontSize: 18
             ),
           ),
         ),
